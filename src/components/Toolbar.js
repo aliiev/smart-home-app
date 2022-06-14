@@ -1,9 +1,8 @@
-import Icon from '@mdi/react'
-import { mdiCloudOutline, mdiBellOutline, mdiAccountOutline } from '@mdi/js'
+import { Icon } from '@iconify/react'
 
 const WeatherWidget = () => (
   <div className="inline-flex bg-zinc-800 rounded-full py-3 px-6">
-    <Icon className="mr-3" path={ mdiCloudOutline } size={ 1 } />
+    <Icon className="mr-3" icon="ic:round-cloud-queue" width="24" />
     <span className="font-medium">Cloudy, 27°C</span>
   </div>
 )
@@ -11,17 +10,17 @@ const WeatherWidget = () => (
 const Settings = () => (
   <div className="flex gap-3">
     <a className="bg-zinc-800 rounded-full p-3" href="/">
-      <Icon path={ mdiBellOutline } size={ 1 } />
+      <Icon icon="ic:round-notifications-none" width="24" />
     </a>
     <a className="bg-zinc-800 rounded-full p-3" href="/">
-      <Icon path={ mdiAccountOutline } size={ 1 } />
+      <Icon icon="ic:round-person-outline" width="24" />
     </a>
   </div>
 )
 
 const Toolbar = () => {
   return (
-    <div className="flex items-center justify-between m-3">    
+    <div className="relative sticky top-0 flex items-center justify-between m-3">    
       <WeatherWidget />
       <Settings />
     </div>

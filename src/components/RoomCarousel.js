@@ -1,32 +1,30 @@
-import Icon from '@mdi/react'
-import { mdiSofaOutline, mdiBedDoubleOutline, mdiCountertopOutline, mdiShower, mdiGarageVariant } from '@mdi/js'
-
+import { Icon } from '@iconify/react'
 const rooms = [{
   title: 'Living room',
-  icon: mdiSofaOutline,
+  icon: 'mdi:sofa-outline',
   active: true
 }, {
   title: 'Bedroom',
-  icon: mdiBedDoubleOutline,
+  icon: 'mdi:bed-double-outline',
   active: false
 }, {
   title: 'Kitchen',
-  icon: mdiCountertopOutline,
+  icon: 'mdi:countertop-outline',
   active: false
 }, {
   title: 'Bathroom',
-  icon: mdiShower,
+  icon: 'mdi:shower',
   active: false
 }, {
   title: 'Garage',
-  icon: mdiGarageVariant,
+  icon: 'mdi:garage-variant',
   active: false
 }]
 
 const RoomButton = ({ title, icon, active }) => {
   return (
     <button className={ `snap-start ${ active ? 'bg-yellow-50' : 'bg-zinc-800' } rounded-xl w-26 p-3 transition-colors` }>
-      <Icon className={ `${ active ? 'bg-yellow-500' : 'bg-zinc-600' } rounded-lg mx-auto mb-1 p-3` } path={ icon } size={ 3 } />
+      <Icon className={ `${ active ? 'bg-yellow-500' : 'bg-zinc-600' } rounded-lg mx-auto mb-1 p-3` } icon={ icon } width="60" />
       <span className={ `${ active ? 'text-zinc-800' : '' } text-sm font-bold truncate` }>{ title }</span>
     </button>
   )
