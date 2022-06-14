@@ -35,11 +35,9 @@ const RoomButton = ({ title, icon, active }) => {
 const RoomCarousel = () => {
   return (
     <div className="flex gap-3 m-3 mr-0 snap-x overflow-auto">
-
       { rooms.map(room => (
         <RoomButton key={ room.title } title={ room.title } icon={ room.icon } active={ room.active } />
       )) }
-
     </div>
   )
 }
