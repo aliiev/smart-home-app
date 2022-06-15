@@ -10,11 +10,10 @@ const App = () => {
     <div className="container lg:w-1/4 md:w-1/2 mx-auto">
       <Header />
 
-      <div className="flex flex-col gap-4 p-4">
+      <div className="flex flex-col gap-4 mb-24 p-4">
         <QuickActions />
         <Rooms />
         <Stats />
-        <div className="h-screen"></div>
       </div>
 
       <Navbar />
