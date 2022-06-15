@@ -1,19 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: 'Poppins, sans-serif'
+      }
+    }
+  },
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
     './public/index.html'
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'home': 'url("./images/home-bg.jpg")'
-      },
-      minHeight: {
-        'screen-1/2': '50vh'
-      }
-    },
-  },
-  plugins: [],
+  ]
 }

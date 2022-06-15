@@ -1,26 +1,31 @@
+import WeatherWidget from './WeatherWidget'
 import Toolbar from './Toolbar'
-import RoomCarousel from './RoomCarousel'
+import ActionBtn from './ActionBtn'
 
-const HeaderTitle = () => (
-  <div className="m-3 grow">
-    <h2 className="text-2xl font-semibold">
-      Welcome Home,
-      <br />
-      John Doe
-    </h2>
-  </div>
+const scenes = [{
+  title: 'Awakening',
+  icon: 'mi:sunrise-alt'
+}, {
+  title: 'Sleep',
+  icon: 'charm:moon'
+}, {
+  title: 'Party',
+  icon: 'bx:party'
+}]
+
+const Header = () => (
+  <header className="flex flex-col bg-zinc-800 rounded-b-3xl mb-3 p-4">
+    <div className="flex items-center justify-between">    
+      <WeatherWidget />
+      <Toolbar />
+    </div>
+    <div className="flex gap-3 -mx-4 mt-4 px-4 overflow-auto">
+      { scenes.map(scene => (
+        <ActionBtn key={ scene.title } title={ scene.title } icon={ scene.icon } />
+      )) }
+    </div>
+  </header>
 )
 
-const Header = () => {
-  return (
-    <header className="bg-home bg-cover rounded-b-3xl h-auto mb-3 overflow-hidden">
-      <div className="backdrop-brightness-50 rounded-b-3xl flex flex-col h-full">
-        <Toolbar />
-        <HeaderTitle />
-        <RoomCarousel />
-      </div>
-    </header>
-  )
-}
 
 export default Header
