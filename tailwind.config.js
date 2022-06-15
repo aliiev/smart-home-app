@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Poppins, sans-serif'
+        sans: 'Kanit, sans-serif'
+      },
+      dropShadow: {
+        'navbar': '0px 0px 20px #10b981'
       }
     }
   },
