@@ -20,7 +20,7 @@ const rooms = [{
 }, ]
 
 const Rooms = () => (
-  <div className="grid grid-cols-2 gap-4 px-4">
+  <div className="grid grid-cols-2 gap-4">
     { rooms.map(room => (
       <RoomBtn key={ room.title } title={ room.title } image={ room.image } devices={ room.devices } />  
     )) }
