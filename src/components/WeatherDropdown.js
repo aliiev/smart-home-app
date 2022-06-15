@@ -65,7 +65,7 @@ const weather = {
   }]
 }
 
-const WeatherWidget = () => (
+const WeatherDropdown = () => (
   <Menu as="div">
     <Menu.Button className="inline-flex items-center gap-3 bg-zinc-700 hover:bg-zinc-600 rounded-xl px-5 py-3">
       <Icon icon="ic:outline-cloud" width="18" />
@@ -104,4 +104,4 @@ const WeatherWidget = () => (
   </Menu>
 )
 
-export default WeatherWidget
+export default WeatherDropdown
