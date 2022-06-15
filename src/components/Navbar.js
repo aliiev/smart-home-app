@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed bg-zinc-600 backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-t-2xl h-20 left-0 right-0 bottom-0 overflow-hidden">
+    <nav className="fixed bg-zinc-600 backdrop-blur-lg bg-opacity-30 rounded-2xl h-20 left-0 right-0 ml-3 mr-3 bottom-3 overflow-hidden">
       <div className="flex items-center justify-between h-full px-6 py-2 py-3">
         <a href="/">
           <Icon className="text-yellow-50" icon="ic:round-home" width="36" />

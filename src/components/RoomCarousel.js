@@ -25,7 +25,7 @@ const RoomButton = ({ title, icon, active }) => {
   return (
     <button className={ `snap-start ${ active ? 'bg-yellow-50' : 'bg-zinc-800' } rounded-xl w-26 p-3 transition-colors` }>
       <Icon className={ `${ active ? 'bg-yellow-500' : 'bg-zinc-600' } rounded-lg mx-auto mb-1 p-3` } icon={ icon } width="60" />
-      <span className={ `${ active ? 'text-zinc-800' : '' } text-sm font-bold truncate` }>{ title }</span>
+      <span className={ `${ active ? 'text-zinc-800' : '' } text-xs font-semibold truncate` }>{ title }</span>
     </button>
   )
 }

@@ -1,9 +1,9 @@
 import { Icon } from '@iconify/react'
 
 const WeatherWidget = () => (
-  <div className="inline-flex bg-zinc-800 rounded-full py-3 px-6">
+  <div className="inline-flex items-center bg-zinc-800 rounded-full py-3 px-5">
     <Icon className="mr-3" icon="ic:round-cloud-queue" width="24" />
-    <span className="font-medium">Cloudy, 27°C</span>
+    <span className="font-medium text-sm">Cloudy, 27°C</span>
   </div>
 )
 
