@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import QuickActions from './components/QuickActions'
 import Rooms from './components/Rooms'
+import Stats from './components/Stats'
 import Navbar from './components/Navbar'
 import './App.sass'
 
@@ -12,6 +13,8 @@ const App = () => {
       <div className="flex flex-col gap-4 p-4">
         <QuickActions />
         <Rooms />
+        <Stats />
+        <div className="h-screen"></div>
       </div>
 
       <Navbar />
