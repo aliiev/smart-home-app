@@ -14,7 +14,7 @@ const scenes = [{
 }]
 
 const Header = () => (
-  <header className="flex flex-col bg-zinc-800 rounded-b-3xl mb-3 p-4">
+  <header className="flex flex-col bg-zinc-800 rounded-b-3xl mb-4 p-4">
     <div className="flex items-center justify-between">    
       <WeatherWidget />
       <Toolbar />
